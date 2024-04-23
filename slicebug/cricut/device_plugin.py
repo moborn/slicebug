@@ -26,7 +26,7 @@ class DevicePlugin(BasePlugin):
     def _recv(self):
         return PBCommonBridge.FromString(self.recv_bytes())
 
-    def recv(self, expect=None):
+    def recv(self, expect=2):
         message = self._recv()
 
         if (expect is not None) and (message.status != expect):

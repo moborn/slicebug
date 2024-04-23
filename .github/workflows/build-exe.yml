@@ -13,7 +13,9 @@ on:
       tags:
         description: 'Test scenario tags'
         required: false
-        type: boolean
+        type: choice
+        options:
+          - test
       environment:
         description: 'Environment to run tests against'
         type: environment

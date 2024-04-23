@@ -29,9 +29,9 @@ class DevicePlugin(BasePlugin):
     def recv(self, expect=0):
         message = self._recv()
 
-        if (message.status != expect):
-            raise ProtocolError(
-                f"incorrect message status: expected {expect}, got {message.status}"
-            )
+        # if (message.status != expect):
+        #     # raise ProtocolError(
+        #     #     f"incorrect message status: expected {expect}, got {message.status}"
+        #     # )
 
-        return message
+        # return message

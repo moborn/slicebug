@@ -43,5 +43,7 @@ jobs:
           path: slicebug-release
       - name: Release
         uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+
         with:
           files: slicebug-windows.zip
